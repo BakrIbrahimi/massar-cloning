@@ -1,0 +1,157 @@
+ @font-face {
+  font-family: "NeoSansArabic";
+  src: url(./alfont_com_AlFont_com_NeoSansArabic.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "NeoSansArabic";
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.welcome-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom right, #5c61a3, #115ba6);
+  color: #fff;
+  padding: 30px 80px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  .welcome-box {
+    display: none;
+  }
+}
+
+.welcome-box h1 {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 1;
+  width: 500px;
+}
+
+.welcome-box p {
+  width: 70%;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 50px;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .input-box {
+    height: 100vh;
+  }
+}
+
+.input-box .ministry-logo img {
+  width: 350px;
+  margin-top: 30px;
+}
+
+.input-box .massar-logo-input img {
+  margin-bottom: 30px;
+}
+
+.input-box .massar-logo-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin-top: -70px;
+}
+
+.input-box .massar-logo-input input {
+  border: 1px solid #c0c7da;
+  padding: 10px 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.input-box .massar-logo-input input::placeholder {
+  font-size: 16px;
+  color: #75768a;
+  font-weight: 100;
+}
+
+.input-box .massar-logo-input .submit-btn {
+  color: #fff;
+  background-image: linear-gradient(to right, #ff8923, #ffaf28);
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.input-box .massar-logo-input .forget-pass {
+  font-size: 11px;
+  color: gray;
+  cursor: pointer;
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+}
+
+.lang-area .lang-box {
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+  display: flex;
+  font-size: 13px;
+  font-weight: 400;
+  color: gray;
+}
+
+.lang-area .lang-box p:nth-child(2) {
+  margin-right: 20px;
+  font-weight: 600;
+  color: #505f86;
+  position: relative;
+}
+
+.lang-area .lang-box p:nth-child(2)::before {
+  content: "";
+  top: 2px;
+  right: -11px;
+  height: 10px;
+  width: 1px;
+  background-color: #505f86;
+  position: absolute;
+}
+
+
+.video {
+  width: 100%;
+  display: none;
+}
+
